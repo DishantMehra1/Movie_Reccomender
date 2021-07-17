@@ -41,6 +41,9 @@ function App() {
   }
 
   const addToFavorite = (movie) => {
+    // const newFavList = setFavorites((fav) => {
+    //   return { ...fav, movie }
+    // })
     const newFavList = [...favorites, movie]
     setFavorites(newFavList)
     saveMoviesToLocalStorage(newFavList)
@@ -57,7 +60,6 @@ function App() {
     else {
       return
     }
-    // alert(``)
   }
 
   // ****** To get the details of the movie ******----->>>
